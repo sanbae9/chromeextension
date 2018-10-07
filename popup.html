@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+            background-image: url("https://www.welovesolo.com/wp-content/uploads/2014/10/p18d5ge5021srpap01dlq1jtv154f5-details.jpg")
+        }
+
+        header {
+            font-size: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            
+        }
+        
+        .question {
+            font-size: 15px;
+            text-align: left;
+            margin-left: 8px;
+        }
+
+        input[type=text] {
+            width: 95%;
+            padding: 6px 10px;
+            margin: 5px 5px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            align-self: center;
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+
+        input[type=button] {
+            margin-left: 10px;
+            margin-top: 12px;
+        }
+
+
+        </style>
+    </head>
+    <header>Add a new translation!</header>
+    <body style="width: 300px">
+        <form>
+            <p class="question">What is the english word?</p>
+            <input id ="english_word" type="text" name = english_word style="float:center"><br>
+            <p class="question">What is the foreign synonym/translation?</p>
+            <input id ="foreign_word" type="text" name = foreign_word><br>
+            <input id="newWordSubmission" type="button" value="Submit"><br>
+            <input id="showlistofwords" type="button" value="Current Words"><br>
+            <input id="clearwords" type="button" value="Clear Words List"><br>
+            <!-- <input id="toggle"  type="button" value="Toggle On/Off"> <br> -->
+        </form>
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+        "name": "Foreign Language Vocabulary Immersion Extension",
+        "description": "Replaces designated English words on web page with foreign equivalent that you define.",
+        "browser_action": {
+            "default_popup": "popup.html"
+        },
+        "background": {
+            "scripts": [
+                "background.js"
+            ],
+            "persistent": false
+        },
+        "permissions": [
+            "tabs",
+            "storage",
+            "activeTab"
+        ],
+
+        "version": "1.0",
+        "icons": {
+          "64": "icon.png"
+        },
+        "content_scripts": [
+            {
+                "matches": [
+                    "*://*/*"
+                ],
+                "js": [
+                    "content.js"
+                ],
+                "run_at": "document_end"
+            }
+        ]
+    }
+    
